@@ -1,0 +1,58 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+#intro h1 {
+    font-size: 80px;
+}
+
+#intro h2 {
+    font-size: 40px;
+}
+
+#fullbody {
+    display:grid;
+    grid-template-columns: 70% 30%;
+}
+
+.foodphoto {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    padding: 20px;
+}
+
+#fullbody h4 {
+    background: #afa272;
+    color: white;
+}
+
+.caption {
+    border: 1px solid #ede7e2;
+    padding: 20px;
+    box-shadow: 5px 10px #ede7e2;
+  }
+
+#nav-placeholder {
+    text-align: left;
+}
+
+.active {
+    background-color: #ede7e2;
+}
+
+ul li {    
+    float: left;
+    /* background: #ccc; */
+    height: 40px;
+    line-height: 40px;
+    list-style-type: none;
+}
+ul li a {
+    display: block;
+    padding: 0 20px;    
+}
+
+#box {border-style: dashed;}
