@@ -29,6 +29,12 @@
     color: white;
 }
 
+#fullbody h5 {
+    background: #afa272;
+    color: white;
+    font-size: 30px;
+}
+
 .caption {
     border: 1px solid #ede7e2;
     padding: 20px;
@@ -56,3 +62,58 @@ ul li a {
 }
 
 #box {border-style: dashed;}
+
+#myMap {
+    margin: 0 auto; height: 800px;
+}
+
+.loading {
+    margin-top: 10em;
+    text-align: center;
+    color: gray;
+}
+
+
+.block {
+    display: none;
+}
+
+.caption {
+    padding: 10px 20px;
+}
+
+.grid-item {
+    width: 100%;  
+    /* border: 1px solid #ede7e2; */
+    border: 2px dashed #ede7e2;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+
+.polaroid {
+    width: 80%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+    display: inline-block;
+}
+
+.enclosegroup {
+    border: 5px solid #ede7e2;
+}
+
+.group {
+    display:grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+#top-navigation {
+    background: #6f4e37;
+    display:grid;
+    grid-template-columns: 50% 50%;
+    padding: 10px;
+}
+
+#top-navigation a {
+    color: white;
+    font-size: 20px;
+}
