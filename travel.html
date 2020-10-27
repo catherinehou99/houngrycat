@@ -12,6 +12,8 @@
     <script src="https://code.highcharts.com/maps/highmaps.js"></script>
     <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
     <script src="https://code.highcharts.com/mapdata/countries/jp/jp-all.js"></script>
+    <script src="//d3js.org/d3.v3.min.js"></script>
+
 </head>
 
 <body>
@@ -20,22 +22,54 @@
         <h2>happ.eat.ness</h2>
     </section>
     <div id="top-navigation"></div>
-    <section id="fullbody">
-        <section id="posts">
+    <section class="fullbody">
+        <section>
             <div id="myMap"></div>
+        </section>
+        <section id="about">
+            <div id="box">
+                <h1>WELCOME!</h1>
+                <img class="aboutphoto" src="images/cover.jpg" alt="catphoto">
+                <div id="aboutmediv"></div>
+            </div>
+            <div>
+        </section>
+    </section>
+    <!-- <section class="fullbody"> -->
+        <section id="posts">
             <div class=block id="jp-tk">
                 <div class="regionblock">
                     <h1>Tokyo</h1>
                     <h1>Summer 2019</h1>
-
-                    <div class="polaroid">
-                        <img class="foodphoto" src="images/IMG_0729.JPG" alt="ichiran">
-                        <div class="caption">
-                            <h4>Shibuya</h4>
-                            <h2>Ichiran Ramen 一蘭</h2>
-                            <p>09.21.19 <br> Tonkotsu Ramen</p>
+                    <section class="fullbody">
+                        <div class="polaroid">
+                            <img class="foodphoto" src="images/IMG_0729.JPG" alt="ichiran">
+                            <div class="caption">
+                                <h4>Shibuya</h4>
+                                <h2>Ichiran Ramen 一蘭</h2>
+                                <p>09.21.19 <br> Tonkotsu Ramen</p>
+                            </div>
                         </div>
-                    </div>
+                        <section class=subtitle id="TK">
+                            <div id=rectangle></div>
+
+                            <text>
+                                Ending the trip at one of Japan's most famous ramen chains. For a while it blew up 
+                                on social media because of its private single booths if you want to enjoy your 
+                                ramen privately. If there is anything I'll miss about Japan it'll be the bidets
+                                and the ability to order food on vending machines. They only offer one broth (tonkotsu)
+                                hence the ichi in ichiran perhaps, but it was the best hakata ramen I've had in my life!
+                                Even though we had to peel the eggs ourselves at Ichiran, the marinade there
+                                penetrated all throughout the egg white into this warm brown color. The yolk had a soft
+                                and luscious texture that complemented the subtle traces of mirin in the egg white.
+                                It was not my favorite ramen, however, because we also have hakata in the states, so
+                                taste was very familiar. But after eating at Ichiran and going back to Shinsengumi 
+                                (a ramen shop in 626), I found myself missing that deep savory bone broth from Ichiran.
+                            </text>
+                        </section>
+                    </section>
+
+                    <br>
 
                     <div class="polaroid">
                         <img class="foodphoto" src="images/IMG_0703.JPG" alt="blacksesame">
@@ -109,7 +143,33 @@
                                     <p>09.19.19 <br> Customized Cup Noodles</p>
                                 </div>
                             </div>
-        
+                            <div class="polaroid">
+                                <img class="foodphoto" src="images/IMG_5810.JPG" alt="cupnoodles">
+                                <div class="caption">
+                                    <h4>Tokyo Ramen Street</h4>
+                                    <h2>Rokurinsha</h2>
+                                    <p>09.19.19 <br> Tsukemen</p>
+                                </div>
+                            </div>
+                            <div class="enclosegroup">
+                                <h5>Pokémon Cafe</h5>
+                                <p>09.18.19</p>
+                                <div class=group2>
+                                    <div class="grid-item">
+                                        <img class="foodphoto" src="images/IMG_5803.jpg" alt="grapes">
+                                        <div class="grid-caption">
+                                            <h3>Pichu Curry</h3>
+                                        </div>
+                                    </div>
+            
+                                    <div class="grid-item">
+                                        <img class="foodphoto" src="images/IMG_5804.jpg" alt="inari">
+                                        <div class="grid-caption">
+                                            <h3>Jigglypuff Cheesecake</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                     </div>
                 </div>
             </div>
@@ -123,20 +183,16 @@
                 Osaka
             </div>
         </section>
-        <section id="about">
-            <div id="box">
-                <h1>WELCOME!</h1>
-                <img class="aboutphoto" src="images/cover.jpg" alt="catphoto">
-                <div id="aboutmediv"></div>
-            </div>
-        </section>
-    </section>
+    <!-- </section> -->
 
     <br>
 
     <div id="nav-placeholder"></div>
 
     <div id="footer"></div>
+
+    <script type="scripts/main.js"></script>
+
 
 </body>
 

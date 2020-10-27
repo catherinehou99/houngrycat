@@ -33,6 +33,7 @@ function init() {
     topnavfunc();
     footerfunc();
     plotMap();
+    // createRectangle();
 }
 
 document.addEventListener('DOMContentLoaded', init, false)
@@ -120,15 +121,23 @@ function plotMap() {
 }
 
 let previouselement;
+let previousright;
 
 function hi(e) {
-    console.log(this['hc-key']);
+    console.log(this.properties['hc-a2']);
     if (previouselement) {
         previouselement.style.display = "none"
+    }
+    if (previousright) {
+        previousright.style.display = "none"
     }
     let element = document.getElementById(this['hc-key']);
     element.style.display = "block"
     previouselement = element;
+
+    let right = document.getElementById(this.properties['hc-a2']);
+    right.style.display = "block"
+    previousright = right;
 }
 
 var data = [
@@ -180,3 +189,17 @@ var data = [
     // ['jp-yt', 45],
     // ['jp-3302', 46]
 ];
+
+function createRectangle() {
+    //make the svg container 
+    var svgContainer = d3.select("body").append("svg")
+      .attr("width", 200)
+      .attr("height", 200);
+     //make the rectangle 
+    var rectangle = svgContainer.append("rect")
+      .attr("x", 150)
+      .attr("y", 50)
+      .attr("fill", "red")
+      .attr("width", 50)
+      .attr("height", 140);
+}
